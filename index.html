@@ -3,70 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deskripsi Game</title>
-    <link rel="stylesheet" href="c:\Users\Lenovo\Documents\Ka\styles.css">
+    <title>Game Venture</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <div class="header">
+    <header>
+        
         <h1>Game Venture</h1>
         <nav>
             <ul>
-                <li><a href="c:\Users\Lenovo\Documents\Ka\P1.html">Home</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
-    </div>
-    <div class="container">
-        <div class="description">
-            <p >AFK Journey merupakan game RPG Open-world terbaru yang akan membawa pemain menjelajahi dunia anime yang memukau dengan grafis seni kanvas yang indah.Game besutan pengembang Lilith Games dan publisher Farlight Games ini sudah resmi diluncurkan pada tanggal 8 Agustus 2024.Untuk meramaikan peluncurannya, AFK Journey telah menggelar periode pra-registrasi untuk para pemain mendaftar dan mendapatkan akses lebih awal serta hadiah spesial yang telah disiapkan saat hari perilisannya.Untuk merayakannya, Farlight Games juga merilis sebuah video trailer eksklusif untuk pemain saksikan. Game ini juga memberikan opsi dubbing bahasa Jepang dengan pengisi suara ternama, seperti Yui Ishikawa, yang dikenal sebagai pengisi suara 2B dari Nier: Automata dan Mikasa dari Attack on Titan, serta Akari Kito, pengisi suara Nezuko dari Demon Slayer. Sebuah sentuhan yang sempurna mengingat game ini memiliki grafis bak anime yang indah.</p>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search games..." onkeyup="searchGames()">
         </div>
+        
+    </header>
 
-        <button id="learnMore">Pelajari Lebih Lanjut</button>
-        <div id="moreInfo" class="hidden">
-            <h2>Fitur Utama dan Media:</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Fitur</th>
-                        <th>Deskripsi</th>
-                        
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Advanture</td>
-                        <td>Jelajahi dunia yang luas </td>
-                    </tr>
-                    <tr>
-                        <td>Karakter Beragam</td>
-                        <td>Pilih dari berbagai karakter unik dengan kemampuan khusus.</td>
-                    </tr>
-                    <tr>
-                        <td>Quest Menarik</td>
-                        <td>Ikuti quest yang penuh tantangan dan cerita mendalam.</td>
-                    </tr>
-                    <tr>
-                        <td>Gambar Game</td>
-                        <td>
-                            <img src="c:\Users\Lenovo\Documents\Ka\Poto Codingan\AFK2.jpg" alt="Petualangan Ajaib" class="media-img" />
-                            <img src="c:\Users\Lenovo\Documents\Ka\Poto Codingan\AFK2.jpg" alt="Petualangan Ajaib" class="media-img" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Trailer Game</td>
-                        <td>
-                            <iframe width="100%" height="200" src="c:\Users\Lenovo\Documents\Video\Goddess of Victory_ NIKKE Official Trailer.mp4" frameborder="0" allowfullscreen></iframe>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+        <section class="games">
+            <div class="game-card">
+                <img src="AFK2.jpg" alt="Game 1" class="media-img" >
+                <h4>AFK Journey</h4>
+                <p>AFK Journey merupakan game RPG Open-world terbaru yang akan membawa pemain menjelajahi dunia anime yang memukau dengan grafis seni kanvas yang indah......</p>
+                <button><a href="P1.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="Nikke.jpg" alt="Game 1" class="media-img" >
+                <h4>Nikke</h4>
+                <p>Nikke: Goddess of Victory adalah game third-person shooter (TPS) berbasis mobile yang dikembangkan oleh Shift Up dan diterbitkan oleh Level Infinite......</p>
+                <button><a href="P2.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="Genshin.jpg" alt="Game 1" class="media-img" >
+                <h4>Genhsin Impact</h4>
+                <p>Genshin Impact adalah permainan yang bergenre dunia terbuka ( open world ) sekaligus bermain peran aksi ......</p>
+                <button><a href="p3.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="Valorant.jpg" alt="Game 1" class="media-img" >
+                <h4>Valorant</h4>
+                <p>Valorant adalah game first-person shooter (FPS) berbasis taktik yang dikembangkan oleh Riot Games, terkenal dengan kombinasi elemen strategi dan aksi cepat......</p>
+                <button><a href="p4.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="dragonball0.jpg" alt="Game 1" class="media-img" >
+                <h4>Dragon Ball FighterZ</h4>
+                <p>VDragon Ball FighterZ adalah game fighting berbasis tim yang dikembangkan oleh Arc System Works dan diterbitkan oleh Bandai Namco Entertainment......</p>
+                <button><a href="P5.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="Honkais.jpg" alt="Game 1" class="media-img" >
+                <h4>Honkai Star Rail</h4>
+                <p>Honkai: Star Rail adalah game turn-based RPG yang dikembangkan oleh HoYoverse (dulu dikenal sebagai miHoYo).......</p>
+                <button><a href="P6.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="ZZZ.jpg" alt="Game 1" class="media-img" >
+                <h4>Zenless Zone Zero (ZZZ)</h4>
+                <p> game action RPG yang dikembangkan oleh HoYoverse (dulu miHoYo), studio yang juga membuat Genshin Impact dan Honkai Impact.......</p>
+                <button><a href="P7.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="Sun.jpg" alt="Game 1" class="media-img" >
+                <h4>Black Myth: Wukong</h4>
+                <p> Black Myth: Wukong adalah game action RPG berbasis mitologi Tiongkok yang dikembangkan oleh Game Science Studio.......</p>
+                <button><a href="P8.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="DBS0.jpg" alt="Game 1" class="media-img" >
+                <h4>Dragon Ball Sparking Zero</h4>
+                <p> Dragon Ball Sparking Zero adalah nama yang muncul sebagai bagian dari rumor atau spekulasi di kalangan.......</p>
+                <button><a href="P9.html"> Liat Detail </a></button>
+            </div>
+            <div class="game-card">
+                <img src="GodOfWar.jpg" alt="Game 1" class="media-img" >
+                <h4>God Of War Ragnarok</h4>
+                <p> God of War: Ragnarök adalah game aksi-petualangan yang dikembangkan oleh Santa Monica Studio dan diterbitkan oleh Sony Interactive Entertainment .......</p>
+                <button><a href="P10.html"> Liat Detail </a></button>
+            </div>
+          
+        </section>
+    </main>
+
     <footer>
-        <p>Thank You For See My Web</p>
+        <p> Thank You For Viewed My Website </p>
     </footer>
-    <script src="c:\Users\Lenovo\Documents\Ka\js.javascript.js"></script>
+
+    <script src="js.js"></script>
 </body>
 </html>
